@@ -1,0 +1,102 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+  background: url(../img/space.jpg);
+  object-fit: contain;
+  font-family: 'Space Mono', sans-serif;
+}
+
+.flex{
+  height: 100vh;
+  margin: 50px;
+}
+
+.container, .flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container {
+  flex-direction: column;
+}
+
+.container {
+  background: #fff;
+  border-radius: 10px;
+  height: 1000px;
+  width: 1000px;
+  padding: 40px;
+}
+
+.container h1 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+input {
+  margin-bottom: 20px;
+  min-height: 1.5rem;
+  --webkit-appearance: none;
+}
+
+button {
+  background: #333;
+  color: #fff;
+  border-radius: 5px;
+  padding: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+img{
+  max-height: 500px;
+  max-width: 600px;
+}
+
+h3 {
+  font-size: 1rem;
+  /* padding: 0 30px 40px 30px; */
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+@media (max-width: 786px) {
+  .container {
+    width: 500px;
+    margin: 250px;
+  }  
+  img {
+    max-height: 50vh;
+    max-width: 50vw;
+  }
+  h3 {
+    max-height: 50vh;
+    width: 400px;
+    font-size: 2vw;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .container {
+    margin: 250px;
+    width: 400px;
+  } 
+  h3 {
+    width: 300px;
+    font-size: 2.25vw;
+  }
+} 
